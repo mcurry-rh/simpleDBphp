@@ -9,7 +9,7 @@ if ($connection->connect_errno) {
     printf("Connect failed: %s\n", $mysqli->connect_error);
     exit();
 }
-echo "<br><br><br><br>My awesome PHP test";
+echo "<br><br><br><br>PHP Test";
 $query = "SELECT * from users";
 $rs = $connection->query($query);
 while ($row = $rs->fetch_array(MYSQLI_ASSOC)) {
